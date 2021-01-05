@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Yongfeng Zhong | RoboCup</title>
+<title>Yongfeng Zhong | Fine-Grained</title>
 <meta name="description" content="">
 
 <!-- Open Graph -->
@@ -28,7 +28,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/projects/1_project/">
+<link rel="canonical" href="/projects/3_project/">
 
 <!-- Theming-->
 
@@ -139,16 +139,16 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Tracking and Navigation for Soccer Robots</h1>
+    <h1 class="post-title">Fine-Grained Image Recognition</h1>
    <!--  <p class="post-description">a project with a background image</p> -->
   </header>
-
-
+    
   <article>
-    <p>During my master's study at the University of Bonn, I was actively interested in robot learning after working on several course projects related to robotics. My <a href="https://www.ais.uni-bonn.de/theses/Yongfeng_Zhong_Master_Thesis_03_2016.pdf" target="_blank">master thesis</a> aims to build a more robust visual tracking system that allows the humanoid soccer robot to achieve better performance in motion planning in RoboCup competition. I was a member of RoboCup team NimbRo TeenSize at Univ. of Bonn. My thesis work helped our team won the 4th place in the Humanoid League competition and the 1st place RoboCup Design Award.</p>
 
-    <hr/>
-
+    <em>Due to the non-disclosure agreement (NDA), I cannot describe too many technical details about the project.</em>
+    
+<hr/>
+    
 <!-- <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
 layout: page
 title: project
@@ -168,26 +168,40 @@ img: /assets/img/12.jpg
         <img class="img-fluid rounded z-depth-1" src="/assets/img/5.jpg" alt="" title="example image" />
     </div>
 </div> -->
-
-<p>As for a soccer robot in the RoboCup competition, It is crucial to detect field features efficiently for matching to get an accurate estimate of its poses. The previous approaches only realized three degrees of freedom (3-DoF) of robot pose using visual perception and retrieved another 3-DoF pose from IMU and Kinematic model. Since the IMU data is not always reliable, it may reduce the accuracy of the resulting estimation. To address these challenges, I proposed a new kernel-based line detection method for extracting field features from the input images. Besides, I also developed a model-based visual tracking system that can track 6-DoF camera pose on the soccer field. The experiment shows that the line detection method is less sensitive to light condition changes than the color thresholding-based approaches and the system is less vulnerable than traditional approaches to the error from IMU data.</p>
+<h3>Fine-Grained Image Recognition for Dishes</h3>
+   <p> My job focuses on applying deep learning (DL) for image processing. I worked as a project owner for a project that aims at providing fine-grained dish recognition service. The challenges in this project are preprocessing crawled data labeled with ambiguous tags, e.g., the same dish can be named differently and the same tag may refer to different dishes, and distinguishing the dishes that have very similar visual features. E.g., “Curry potato beef” looks very similar to “Curry potato pork.” To address these challenges, I built a hierarchical dish tag system (DTS) that has the largest coverage of dishes in the world and collected 10 million food images that are well labeled according to this tag system. By leveraging hierarchy information during the training process, the subtle difference among dishes can be identified. As a result, the dish recognition services can identify more than 8,500 categories of dishes and 250,000 subcategories; and provide rich information of dishes like ingredients, calories, and recipes.</p>
 
 <div class="row justify-content-sm-center">
-    
+   <div class="row justify-content-sm-center">    
     <div class="col-sm-8 mt-3 mt-md-0">
-      <img class="img-fluid rounded z-depth-1" src="/assets/img/robocup1.jpg" alt="" title="example image" />
-      <p>The soccoer field in RoboCup 2015 at Heifei, China</p>
-    </div>
+      <img class="img-fluid rounded z-depth-1" src="/assets/img/fine1.jpg" alt="" title="example image" />
+         <p></p>
+      </div>
+  </div>
+</div>
 
-    <div class="col-sm-8 mt-3 mt-md-0">
-      <img class="img-fluid rounded z-depth-1" src="/assets/img/robocup2.jpg" alt="" title="example image" />
-      <p>We won design award!</p>
-    </div>
+   <p>
+    This service achieves the best performance among peer companies and has been widely adopted by Baidu Nuomi and Baidu App and lead to several patents. Moreover, since it is possible to customize the food library according to the food industry’s needs, this service has been widely used in the scenario of self-checkout in the food industry, which reaches the goals of a rapid cash register and low workforce cost.
+   </p>
 
+<hr/>
+
+<h3>Fine-Grained Image Recognition for Damaged Cars</h3>
+
+<p> Moreover, I was also engaged in another project called CAR damage detection that aims to identify the damaged part with give more detailed information about damage types, damage area, and damage severity. This technology is beneficial for the car insurance industry. The challenge in this project is the fusion of multiple models such as part segmentation, damage segmentation and damage classification, and key-point detection. By applying a bi-linear approach, our system achieved a good result after the model ensemble.</p>
+<p>
+  The car damage service has been ready for launch to the market. And my proposed approach has been patented. This technology enables an insurance company to save cost for car damage grading，and speed up the procedure of damage claim.
+</p>
+
+<div class="row justify-content-sm-center">    
     <div class="col-sm-8 mt-3 mt-md-0">
-      <img class="img-fluid rounded z-depth-1" src="/assets/img/robocup3.jpg" alt="" title="example image" />
-      <p>NimbRo Team in RoboCup 2015 </p>
+      <img class="img-fluid rounded z-depth-1" src="/assets/img/fine2.jpg" alt="" title="example image" />
+       <p></p>
     </div>
 </div>
+
+
+
 <!-- <div class="caption">
     You can also have artistically styled 2/3 + 1/3 images, like these.
 </div> -->
@@ -239,6 +253,10 @@ Here’s the code for the last row of images above:</p> -->
 <script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
 
 <!-- Load Common JS -->
 <script src="/assets/js/common.js"></script>
